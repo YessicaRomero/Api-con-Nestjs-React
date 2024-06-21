@@ -1,0 +1,64 @@
+{
+  "bandas": [
+    {
+      "id": "1",
+      "nombre": "Soda Stereo",
+      "genero": "Rock",
+      "año_de_creacion": 1982,
+      "imagen": "https://sodastereo.com/files/albums/soda-stereo.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": 123,
+      "genero": "Rock, Ska, Reggae",
+      "año_de_creacion": 1985,
+      "imagen": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1xkvWE-default.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "Los Fabulosos Cadillacs",
+      "genero": "Rock, Ska, Reggae",
+      "año_de_creacion": 1985,
+      "imagen": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1xkvWE-default.jpg"
+    },
+    {
+      "id": "6",
+      "nombre": "Divididos",
+      "genero": "Rock",
+      "año_de_creacion": 1988,
+      "imagen": "https://imgsvr.radiocut.site/get/crop/center/200/200/cuts_logos/98/a6/98a6f867-bd04-4074-9b71-0b1c3f5ce553.jpg"
+    },
+    {
+      "id": "7",
+      "nombre": "Ratones Paranoicos",
+      "genero": "Rock",
+      "año_de_creacion": 1983,
+      "imagen": "https://i.scdn.co/image/ab67616d00001e02126d7de59eb95e3db540d472"
+    },
+    {
+      "id": "9",
+      "nombre": "Andrés Calamaro",
+      "genero": "Rock",
+      "año_de_creacion": 1984,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdo1_LqJ8zdzKgI0Ws9L4V6C5gQDmKEtKLQ&usqp=CAU"
+    },
+    {
+      "id": "10",
+      "nombre": "Fito Páez",
+      "genero": "Rock",
+      "año_de_creacion": 1981,
+      "imagen": "https://www.imer.mx/interferencia/wp-content/uploads/sites/55/fito.jpg"
+    },
+    {
+      "id": "4"
+    },
+    {
+      "id": "11",
+      "nombre": "Maria Becerra",
+      "genero": "Cumbia",
+      "año_de_creacion": 2023,
+      "imagen": "https://images.app.goo.gl/aakNHrN5ccWZLPn76"
+    }
+ 
+  ]
+ }
