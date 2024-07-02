@@ -8,11 +8,11 @@
       "imagen": "https://sodastereo.com/files/albums/soda-stereo.jpg"
     },
     {
-      "id": "2",
-      "nombre": 123,
+      "nombre": "Fabulosos",
       "genero": "Rock, Ska, Reggae",
       "año_de_creacion": 1985,
-      "imagen": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1xkvWE-default.jpg"
+      "imagen": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1xkvWE-default.jpg",
+      "id": "2"
     },
     {
       "id": "5",
@@ -50,15 +50,23 @@
       "imagen": "https://www.imer.mx/interferencia/wp-content/uploads/sites/55/fito.jpg"
     },
     {
-      "id": "4"
-    },
-    {
       "id": "11",
       "nombre": "Maria Becerra",
       "genero": "Cumbia",
       "año_de_creacion": 2023,
-      "imagen": "https://images.app.goo.gl/aakNHrN5ccWZLPn76"
+      "imagen": "https://images.prismic.io/mariabecerra/ada0a459-e8f1-4872-bb61-d4fd716ab6bb_la-nena-de-argentina-album-maria-becerra.webp?auto=compress,format"
+    },
+    {
+      "nombre": "Duki",
+      "genero": "Pop",
+      "año_de_creacion": 2001,
+      "id": "ff44"
+    },
+    {
+      "id": "15",
+      "nombre": "Emilia Mernes",
+      "genero": "Cumbia",
+      "año_de_creacion": 2021
     }
- 
   ]
- }
+}

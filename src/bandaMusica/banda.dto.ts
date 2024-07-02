@@ -7,5 +7,6 @@ export class BandaDto {
     genero:string;
     @IsInt()
     año_de_creacion: number;
-   
+    @IsString()
+   imagen: string;
 }
