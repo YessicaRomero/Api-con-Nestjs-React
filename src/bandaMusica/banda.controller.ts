@@ -1,20 +1,31 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post, Put, Query } from '@nestjs/common';
-import { BandaService} from './banda.service';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  HttpStatus,
+  Param,
+  ParseIntPipe,
+  Post,
+  Put,
+  Query,
+} from '@nestjs/common';
+import { BandaService } from './banda.service';
 import { iBanda } from './banda.interface';
 import { BandaDto } from './banda.dto';
 
 
 @Controller('bandas')
 export class BandaController {
+  public constructor(private readonly bandaService: BandaService) {}
+  
+  @Get()
+  getBandas(): Promise<iBanda[]> {
+    return this.bandaService.getBandas();
+  }
 
-    public constructor( private readonly bandaService: BandaService){}
-    @Get()
-    getBandas(): Promise<iBanda[]>{
-        return this.bandaService.getBandas();
-    }
-
-
-    @Get(':id')
+  @Get(':id')
   async getBandasById(
     @Param(
       'id',
@@ -26,32 +37,29 @@ export class BandaController {
   }
 
   @Get('genero')
-  async getBandasByGener(@Query('genero')genero:string): Promise<any> {
-    return await this.bandaService.getBandasByGener(genero)
+  async getBandasByGener(@Query('genero') genero: string): Promise<any> {
+    return await this.bandaService.getBandasByGener(genero);
   }
 
   @Get('nombre')
-  async getBandasByNombre(@Query('nombre')nombre:string): Promise<any> {
-    return await this.bandaService.getBandasByNombre(nombre)
+  async getBandasByNombre(@Query('nombre') nombre: string): Promise<any> {
+    return await this.bandaService.getBandasByNombre(nombre);
   }
 
-
-    @Post()
+  @Post()
   create(@Body() bandaDto: BandaDto): Promise<any> {
-    return this.bandaService.addBanda(bandaDto)
-}
-@Delete(':id')
-deleteBandaById(@Param('id') id: number) {
-  return this.bandaService.deleteBandaById(id)
-
-}
-@Put(':id')
-@HttpCode(204)
-updateBandaById(
-  @Param('id') id: number,
-  @Body() body: iBanda,
-): Promise<void> {
-  return this.bandaService.updateBandaById(id, body)
-}
-
+    return this.bandaService.addBanda(bandaDto);
+  }
+  @Delete(':id')
+  deleteBandaById(@Param('id') id: number) {
+    return this.bandaService.deleteBandaById(id);
+  }
+  @Put(':id')
+  @HttpCode(204)
+   updateBandaById(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() body: BandaDto,
+  ): Promise<void> {
+    return this.bandaService.updateBandaById(id, body);
+  }
 }
