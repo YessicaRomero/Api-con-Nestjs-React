@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+    background-image: url(imgMusic.png) ;
+    background-position: 50%;
+    
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
